@@ -1,4 +1,5 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
+import sys
 
 
 class Ui_Ui(object):
@@ -18,9 +19,9 @@ class Ui_Ui(object):
         self.statusbar = QtWidgets.QStatusBar(Ui)
         self.statusbar.setObjectName("statusbar")
         Ui.setStatusBar(self.statusbar)
-
         self.retranslateUi(Ui)
         QtCore.QMetaObject.connectSlotsByName(Ui)
+        self.a = False
 
     def retranslateUi(self, Ui):
         _translate = QtCore.QCoreApplication.translate
@@ -29,7 +30,6 @@ class Ui_Ui(object):
 
 
 if __name__ == "__main__":
-    import sys
     app = QtWidgets.QApplication(sys.argv)
     Ui = QtWidgets.QMainWindow()
     ui = Ui_Ui()
