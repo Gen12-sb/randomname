@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.QtGui import QPainter, QColor, QPolygon
 from random import randint
 from PyQt5 import uic
+from class.py
 class Example(QMainWindow):
     def __init__(self):
         super().__init__()
