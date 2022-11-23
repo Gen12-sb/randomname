@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.QtGui import QPainter, QColor, QPolygon
 from random import randint
 from PyQt5 import uic
-from clas.py import Ui_Ui
+from clas import Ui_Ui
 class Example(Ui_Ui):
     def __init__(self):
         super().__init__()
