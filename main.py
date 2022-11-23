@@ -12,7 +12,7 @@ class Example(QMainWindow, Ui_Ui):
         self.pushButton.clicked.connect(self.update)
 
     def drawing(self, qp):
-        qp.setBrush(QColor(255, 255, 0))
+        qp.setBrush(QColor(randint(0, 256), randint(0, 256), randint(0, 256)))
         a = randint(1, 300)
         b = randint(1, 800 - a // 2)
         c = randint(1, 600 - a // 2)
