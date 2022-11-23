@@ -1,5 +1,4 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-import sys
 
 
 class Ui_Ui(object):
@@ -30,6 +29,7 @@ class Ui_Ui(object):
 
 
 if __name__ == "__main__":
+    import sys
     app = QtWidgets.QApplication(sys.argv)
     Ui = QtWidgets.QMainWindow()
     ui = Ui_Ui()

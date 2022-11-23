@@ -7,9 +7,9 @@ class Example(QMainWindow, Ui_Ui):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        self.a = False
         self.pushButton.clicked.connect(self.start)
         self.pushButton.clicked.connect(self.update)
+        self.a = False
 
     def drawing(self, qp):
         qp.setBrush(QColor(randint(0, 256), randint(0, 256), randint(0, 256)))
