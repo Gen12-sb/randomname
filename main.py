@@ -6,8 +6,6 @@ from PyQt5 import uic
 from clas import Ui_Ui
 class Example(Ui_Ui):
     def __init__(self):
-        super().__init__()
-        uic.loadUi('Ui.ui', self)
         self.a = False
         self.pushButton.clicked.connect(self.start)
         self.pushButton.clicked.connect(self.update)
